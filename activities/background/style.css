@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('purple.jpg'), rgb(191, 123, 230);
+}
+
+.mylist {
+    list-style-image: url('ppg.png');
+}
+
+header {
+    color: aliceblue;
+    background: url('lavender.png') top right no-repeat;
+}
+
