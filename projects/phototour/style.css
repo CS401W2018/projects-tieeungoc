@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background.jpg') repeat;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-image: url('images/vietnam.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100px 60px;
+    color: rgb(222, 38, 38);
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background: #bc690a;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 10px;
+    background: url('images/background.jpg') no-repeat right top; 
+    background-color: white;
+}
+
+.mylist {
+    list-style: url('images/ppg.jpg');
+}
+
+footer {
+    background: #bc690a;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
