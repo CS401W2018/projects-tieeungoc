@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: burlywood;
+    padding: 30px 10px 15px 10px; 
+    margin: 0 auto 25px; 
+    width: 80%;
+    overflow: hidden; 
+}
+
+.tiktok {
+    max-width: 100px;
+}
+.tiktok img {
+    width: 100%;
+    display: block;
+}
+
+header h1 {
+    border: 5px dotted #000;
+    padding: 5px; 
+    margin: 0; 
+}
