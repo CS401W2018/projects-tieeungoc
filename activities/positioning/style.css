@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav a {
+    background-color: lightblue;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.moving {
+    position: absolute;
+    top: 200px;
+    right: 250px;
+}
+
+.map {
+    width: 90px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.floating {
+    float: right;
+    margin-left: 10px;
+}
+
+.map img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
