@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: blue;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    background-color: aquamarine;
+    color: brown;
+    padding: 5px 10px;
+}
+.parent {
+    background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.child {
+    background-color: bisque;
+    width: 100px;
+    margin: 10px;
+}
