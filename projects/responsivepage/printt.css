@@ -1,0 +1,36 @@
+@media print {
+    nav, footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-size: 14pt;
+        margin: 30px;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+    main, .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .articles {
+        display: block;
+    }
+    article {
+        margin-bottom: 20px;
+    }
+    article img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
