@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Table></Table></title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <table border="1">
+            <caption>Class Schedule for Winter 2025</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Course Number</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Room</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>11:00-11:50 AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>220</td>
+                    <td>1:00-1:50 PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>310</td>
+                    <td>2:00-2:50 PM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Total Credits</th>
+                    <td>9</td>
+                </tr>
+            </tfoot>
+        </table>
+        <section>
+            <h2>Understanding Tables</h2>
+            <ol>
+                <li><strong>Why use tables?</strong>
+                    <ul>
+                        <li>To display structured data clearly.</li>
+                        <li>Useful for schedules, comparisons, and statistics.</li>
+                        <li>Provides an easy way to view related information in an organized format.</li>
+                    </ul>
+                </li>
+                <li><strong>When to avoid tables?</strong>
+                    <ul>
+                        <li>For general webpage layout (use CSS instead).</li>
+                        <li>For simple lists (use ordered or unordered lists).</li>
+                        <li>If the data is better presented as paragraphs.</li>
+                    </ul>
+                </li>
+                <li><strong>How to make tables more accessible?</strong>
+                    <ul>
+                        <li>Use <code>th</code> for headers.</li>
+                        <li>Add <code>scope</code> attributes to associate headers with data.</li>
+                        <li>Include a <code>caption</code> to describe the table’s purpose.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tieu Ngoc Ly, Hawaii</p>
+    </footer>
+</body>
+</html>
