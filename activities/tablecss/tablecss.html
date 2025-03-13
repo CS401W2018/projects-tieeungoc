@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <link rel="stylesheet" href="tablecss.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <table class="schedule">
+            <caption>Class Schedule for Winter 2025</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Course Number</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Room</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>11:00-11:50 AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>220</td>
+                    <td>1:00-1:50 PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>310</td>
+                    <td>2:00-2:50 PM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Total Credits</th>
+                    <td>9</td>
+                </tr>
+            </tfoot>
+        </table>
+        <section>
+            <h2>Understanding Tables</h2>
+            <ol>
+                <li><strong>Why don’t we use the border attribute?</strong>
+                    <ul>
+                        <li>The border attribute is outdated (HTML4).</li>
+                        <li>We use CSS (border property) instead because it gives more control and keeps HTML clean.</li>
+                    </ul>
+                </li>
+                <li><strong>Easiest way to color every other row differently?</strong>
+                    <ul>
+                        <li>Use CSS nth-child(even).</li>
+                        <li>This applies the color to every even-numbered row automatically. </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tieu Ngoc Ly, Hawaii</p>
+    </footer>
+</body>
+</html>
