@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get">
+            <div class="form-row">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+            </div>
+            <div class="form-row">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-row">
+                <label for="pass">Password: </label>
+                <input type="password" name="password" id="pass">
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+            
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="HI">Hawaii</option>
+                </select>
+            </div>
+            
+            <div class="form-row">
+                <div>Year in School:</div>
+                <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+                <label><input type="radio" name="year" value="Sophomore"> Sophomore</label>
+                <label><input type="radio" name="year" value="Junior"> Junior</label>
+                <label><input type="radio" name="year" value="Senior"> Senior</label>
+            </div>
+        </form>
+        <section>
+            <h2>Form Questions & Answers</h2>
+            <p><strong>What does the 'action' attribute do?</strong> It tells the form where to send the information.</p>
+            <p><strong>What does the 'method' attribute do?</strong> It decides how the form sends the information.</p>
+            <p><strong>GET vs POST:</strong></p>
+            <ul>
+                <li><strong>GET:</strong> Adds information to the link.</li>
+                <li><strong>POST:</strong> Hides information. </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tieu Ngoc Ly</p>
+    </footer>
+</body>
+</html>
