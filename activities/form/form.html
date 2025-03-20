@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
+
     <header>
         <h1>Web Design</h1>
     </header>
+
     <main>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="fullname">Full Name: </label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fullname">
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="form-row">
-                <label for="pass">Password: </label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div class="form-row">
-                <input type="submit" value="Submit">
-            </div>
-            
-            <div class="form-row">
-                <label for="state">State:</label>
-                <select id="state" name="state">
-                    <option value="HI">Hawaii</option>
-                </select>
-            </div>
-            
-            <div class="form-row">
-                <div>Year in School:</div>
-                <label><input type="radio" name="year" value="Freshman"> Freshman</label>
-                <label><input type="radio" name="year" value="Sophomore"> Sophomore</label>
-                <label><input type="radio" name="year" value="Junior"> Junior</label>
-                <label><input type="radio" name="year" value="Senior"> Senior</label>
-            </div>
+            <fieldset>
+                <legend>Account Info</legend>
+
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="CO">Colorado</option>
+                        <option value="UT">Utah</option>
+                        <option value="CA">California</option>
+                        <option value="WA">Washington</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label>Year in School:</label>
+                    <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="Sophomore" checked> Sophomore</label>
+                    <label><input type="radio" name="year" value="Junior"> Junior</label>
+                    <label><input type="radio" name="year" value="Senior"> Senior</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="agree">
+                        <input type="checkbox" name="agree" id="agree" checked> Remember Me
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
         </form>
+
         <section>
             <h2>Form Questions & Answers</h2>
-            <p><strong>What does the 'action' attribute do?</strong> It tells the form where to send the information.</p>
-            <p><strong>What does the 'method' attribute do?</strong> It decides how the form sends the information.</p>
-            <p><strong>GET vs POST:</strong></p>
-            <ul>
-                <li><strong>GET:</strong> Adds information to the link.</li>
-                <li><strong>POST:</strong> Hides information. </li>
-            </ul>
+            <p><strong>1. Ways to Style a Form:</strong> Use CSS for colors, spacing, and borders. Flexbox for easy row/column alignment. Grid for structured layouts. Bootstrap for ready-made styles. Custom fonts & colors for better design.</p>
+            <p><strong>2. Why the Professor Likes Flex:</strong> Easy to align form fields. Works on all screens. Less code, clean layout. Good spacing between elements.
+            </p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Tieu Ngoc Ly</p>
     </footer>
+
 </body>
 </html>
