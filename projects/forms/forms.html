@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Form</title>
+  <link rel="stylesheet" href="forms.css" />
+</head>
+<body>
+  <header>
+    <h1>BYU-Hawaii Form</h1>
+  </header>
+
+  <main>
+    <form action="processing.html" method="get">
+      <fieldset>
+        <legend>Student Information</legend>
+
+        <div class="form-row">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="your@go.byuh.edu" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="808-318-6211">
+        </div>
+
+        <div class="form-row">
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" name="password" required>
+        </div>
+
+        <div class="form-row">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-row">
+          <label for="state">State:</label>
+          <select name="state" id="state">
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="NY">New York</option>
+            <option value="CA">California</option>
+            <option value="WA">Washington</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Year in School:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+            <label><input type="radio" name="year" value="Sophomore"> Sophomore</label>
+            <label><input type="radio" name="year" value="Junior"> Junior</label>
+            <label><input type="radio" name="year" value="Senior"> Senior</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="agree">
+            <input type="checkbox" id="agree" name="agree" checked> Agree to Terms
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Leave a comment..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tieu Ngoc Ly</p>
+  </footer>
+</body>
+</html>
