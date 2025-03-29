@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Form</title>
-  <link rel="stylesheet" href="form.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
   <header>
@@ -12,115 +12,43 @@
   </header>
 
   <main>
-    <form action="processing.html" method="get" id="signupForm">
-      <fieldset>
-        <legend>Create Account</legend>
-
-        <div class="form-row">
-          <label for="fullname">Name:</label>
-          <input type="text" name="fullname" id="fullname" placeholder="Your full name" />
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email Address:</label>
-          <input type="email" name="email" id="email" value="example@email.com" required />
-        </div>
-
-        <div class="form-row">
-          <label for="age">Your Age:</label>
-          <input type="number" name="age" id="age" placeholder="18+" min="1" />
-        </div>
-
-        <div class="form-row">
-          <label for="pass">Create Password:</label>
-          <input type="password" name="password" id="pass" />
-        </div>
-
-        <div class="form-row">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" placeholder="e.g. 8081234567" pattern="[0-9]{10}" />
-        </div>
-
-        <div class="form-row">
-          <label for="state">State:</label>
-          <select name="state" id="state">
-            <option value="">--Select--</option>
-            <option value="HI">Hawaii</option>
-            <option value="CA">California</option>
-            <option value="NY">New York</option>
-          </select>
-        </div>
-
-        <div class="radio-row">
-          <div class="form-spacer">Marital Status:</div>
-          <label><input type="radio" name="marital" value="Single"> Single</label>
-          <label><input type="radio" name="marital" value="Married" checked> Married</label>
-        </div>
-
-        <div class="radio-row">
-          <div class="form-spacer"></div>
-          <label><input type="checkbox" name="remember" id="remember" checked /> Remember me</label>
-        </div>
-
-        <div class="form-row">
-          <label for="comments">Comments:</label>
-          <textarea name="comments" id="comments" placeholder="Write something..."></textarea>
-        </div>
-
-        <div class="form-row">
-          <div class="form-spacer"></div>
-          <input type="submit" value="Submit" />
-        </div>
-      </fieldset>
+    <form action="processing.html" method="post" id="myForm">
+      First Name: 
+      <input type="text" id="firstName" name="first" placeholder="First Name"><br>
+      Last Name: 
+      <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+      Password: 
+      <input type="password" name="pass" id="password"><br>
+      <input type="checkbox" name="remember" checked id="remember"> Remember Me<br>
+      Age: 
+      <input type="number" name="age" id="age"><br>
+      Class:<br>
+      <input type="radio" name="class" value="freshman"> Freshman<br>
+      <input type="radio" name="class" value="sophomore"> Sophomore<br>
+      <input type="radio" name="class" value="junior"> Junior<br>
+      <input type="radio" name="class" value="senior"> Senior<br>
+      State: 
+      <select name="state" id="state">
+        <option value="blank" disabled selected>Make Selection</option>
+        <option value="hi">Hawaii</option>
+        <option value="ca">California</option>
+        <option value="co">Colorado</option>
+        <option value="ut">Utah</option>
+      </select><br>
+      <input type="submit">
     </form>
-
     <section>
-        <h2>JavaScript Questions</h2>
-        <p><strong>1. What is JavaScript? How did it get its name?</strong><br>
-        JavaScript is a language that helps websites do things like animations, clicks, and popups. It was named "JavaScript" to get attention because Java was popular at the time.</p>
-        <p><strong>2. What are the two ways you can run JavaScript?</strong><br>
-        You can run JavaScript in a web browser or on a server using a tool like Node.js.</p>
-        <p><strong>3. What was the most popular front-end JS library?</strong><br>
-        jQuery was the most used JavaScript library before. It made coding easier.</p>
-        <p><strong>4. What is the most popular front-end JS library today?</strong><br>
-        React is now the most used library for building websites with JavaScript.</p>
-      </section>      
+        <h2>1. What is AJAX?</h2>
+        <p>AJAX is a way to get or send data to a server without reloading the page. It helps make websites faster and smoother, like when a form submits and shows a message without refreshing.</p>
+  
+        <h2>2. Why put JavaScript in a separate file?</h2>
+        <p>It helps keep things neat. HTML is easier to read, and we can reuse the same JavaScript on different pages. The browser can load it faster next time because it saves the file.</p>
+      </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Tieu Ngoc Ly</p>
   </footer>
-
-  <script>
-    document.getElementById('signupForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const name = document.getElementById('fullname').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('pass').value;
-      const age = parseInt(document.getElementById('age').value);
-
-      if (!name) {
-        alert("Please enter your name.");
-        return;
-      }
-
-      if (isNaN(age) || age < 18) {
-        alert("You must be at least 18 years old to continue.");
-        return;
-      }
-
-      const data = {
-        fullname: name,
-        email: email,
-        password: password,
-        age: age,
-      };
-
-      console.log("Form submitted:", data);
-      alert("Thanks for signing up!");
-    });
-  </script>
+  <script src="form.js"></script>
 </body>
 </html>
 
