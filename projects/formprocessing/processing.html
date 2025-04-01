@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forms</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Design</h1>
+  </header>
+
+  <main>
+    <form id="myForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="first" placeholder="First Name" /><br />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="last" placeholder="Last Name" /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" name="pass" id="password" /><br />
+
+      <label>
+        <input type="checkbox" name="remember" checked id="remember" />
+        Remember Me
+      </label><br />
+
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" /><br />
+
+      <p>Class:</p>
+      <label><input type="radio" name="class" value="freshman" /> Freshman</label><br />
+      <label><input type="radio" name="class" value="sophomore" /> Sophomore</label><br />
+      <label><input type="radio" name="class" value="junior" /> Junior</label><br />
+      <label><input type="radio" name="class" value="senior" /> Senior</label><br />
+
+      <label for="state">State:</label>
+      <select name="state" id="state">
+        <option value="blank" disabled selected>Make Selection</option>
+        <option value="hi">Hawaii</option>
+        <option value="ca">California</option>
+        <option value="co">Colorado</option>
+        <option value="ut">Utah</option>
+      </select><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p id="responseMessage"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tieu Ngoc Ly</p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>
+

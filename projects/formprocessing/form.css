@@ -1,0 +1,94 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f8f4fc;
+  margin: 20px;
+  color: #333;
+}
+
+header {
+  background-color: #6c63ff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #48b8ac; 
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 12px;
+  width: 250px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 25px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5548d9; 
+}
+
+#responseMessage {
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px solid #6c63ff;
+  background-color: #edeaff;
+  color: #4b40c5;
+  font-weight: bold;
+  border-radius: 6px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  #responseMessage {
+    width: 100%;
+  }
+}
+
+  
