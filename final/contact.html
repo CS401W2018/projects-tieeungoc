@@ -9,7 +9,7 @@
 <body>
 
   <div class="top-bar">
-    📞 Call: (808) 123-4567 | 📧 ngocly301@gmail.com
+    📞 Call: (808) 318-6211 | 📧 ngocly301@gmail.com
   </div>
 
   <nav>
@@ -17,6 +17,8 @@
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="pricing.html">Services and Pricing</a></li>
+      <li><a href="nailstrend.html">Nail Trends</a></li>
+      <li><a href="nailstips.html">Nail Care Tips</a></li>
       <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
   </nav>
@@ -27,7 +29,7 @@
   </header>
 
   <main class="container">
-    <form action="#" method="post" class="form">
+    <form id="bookingForm" class="form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your full name" required />
 
@@ -35,7 +37,8 @@
       <input type="email" id="email" name="email" placeholder="example@email.com" required />
 
       <label for="service">Select a Service:</label>
-      <select id="service" name="service">
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
         <option value="gel">Gel Polish</option>
         <option value="acrylic">Acrylic</option>
         <option value="french">French Tips</option>
@@ -55,25 +58,39 @@
 
     <section>
       <h2>Visit Us:</h2>
-      <p><strong>Location:</strong> Kulanui street</p>
+      <p><strong>Location:</strong> Kulanui Street</p>
       <p><strong>Hours:</strong> Monday – Saturday, 10:00 AM – 5:00 PM</p>
       <p><strong>Phone:</strong> (808) 318-6211</p>
       <p><strong>Email:</strong> ngocly301@gmail.com</p>
     </section>
 
     <section>
-        <h2>Why Clients Choose Nancy Nails ?</h2>
-        <article>
-          <p>Our friendly team works hard to make sure you have a calm and happy visit. We respect your time and take good care of every appointment.</p>
-          <p>When you book with us, you start a relaxing experience that makes you look and feel great. We can't wait to see you at our studio!</p>
-        </article>
-      </section>
-      
+      <h2>Why Clients Choose Nancy Nails?</h2>
+      <article>
+        <p>Our friendly team works hard to make sure you have a calm and happy visit. We respect your time and take good care of every appointment.</p>
+        <p>When you book with us, you start a relaxing experience that makes you look and feel great. We can't wait to see you at our studio!</p>
+      </article>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Tieu Ngoc Ly, Hawaii | 💅 Designed by Nancy</p>
   </footer>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      alert(`Thank you, ${name}! Your ${service} appointment is booked for ${date} at ${time}. We’ll email you soon!`);
+
+      this.reset();
+    });
+  </script>
 </body>
 </html>
 
