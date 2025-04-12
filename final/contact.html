@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a nail appointment at Nancy Nails Studio in Hawaii. Submit your preferred service, date, and time. We’ll confirm your appointment shortly." />
+  <meta name="keywords" content="nail booking, appointment, gel nails, contact salon, Nancy Nails" />
+  <meta name="author" content="Tieu Ngoc Ly" />
   <title>Contact | Nancy Nails Studio</title>
   <link rel="stylesheet" href="final.css" />
 </head>
@@ -19,6 +22,7 @@
       <li><a href="pricing.html">Services and Pricing</a></li>
       <li><a href="nailstrend.html">Nail Trends</a></li>
       <li><a href="nailstips.html">Nail Care Tips</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
   </nav>
@@ -29,7 +33,7 @@
   </header>
 
   <main class="container">
-    <form id="bookingForm" class="form">
+    <form action="confirmation.php" method="POST" class="form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your full name" required />
 
@@ -39,12 +43,12 @@
       <label for="service">Select a Service:</label>
       <select id="service" name="service" required>
         <option value="">-- Select a Service --</option>
-        <option value="gel">Gel Polish</option>
-        <option value="acrylic">Acrylic</option>
-        <option value="french">French Tips</option>
-        <option value="cat">Cat Eyes</option>
-        <option value="ombre">Ombre</option>
-        <option value="mirror">Mirror Nails</option>
+        <option value="Gel Polish">Gel Polish</option>
+        <option value="Acrylic">Acrylic</option>
+        <option value="French Tips">French Tips</option>
+        <option value="Cat Eyes">Cat Eyes</option>
+        <option value="Ombre">Ombre</option>
+        <option value="Mirror Nails">Mirror Nails</option>
       </select>
 
       <label for="date">Date:</label>
@@ -58,7 +62,7 @@
 
     <section>
       <h2>Visit Us:</h2>
-      <p><strong>Location:</strong> Kulanui Street</p>
+      <p><strong>Location:</strong> Kulanui Street, Laie, Hawaii</p>
       <p><strong>Hours:</strong> Monday – Saturday, 10:00 AM – 5:00 PM</p>
       <p><strong>Phone:</strong> (808) 318-6211</p>
       <p><strong>Email:</strong> ngocly301@gmail.com</p>
@@ -67,7 +71,7 @@
     <section>
       <h2>Why Clients Choose Nancy Nails?</h2>
       <article>
-        <p>Our friendly team works hard to make sure you have a calm and happy visit. We respect your time and take good care of every appointment.</p>
+        <p>Our friendly team works hard to make sure you have a calm and happy visit. We respect your time and take great care of every appointment.</p>
         <p>When you book with us, you start a relaxing experience that makes you look and feel great. We can't wait to see you at our studio!</p>
       </article>
     </section>
@@ -77,21 +81,8 @@
     <p>&copy; 2025 Tieu Ngoc Ly, Hawaii | 💅 Designed by Nancy</p>
   </footer>
 
-  <script>
-    document.getElementById("bookingForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      const name = document.getElementById("name").value;
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
-      const time = document.getElementById("time").value;
-
-      alert(`Thank you, ${name}! Your ${service} appointment is booked for ${date} at ${time}. We’ll email you soon!`);
-
-      this.reset();
-    });
-  </script>
 </body>
 </html>
+
 
 
